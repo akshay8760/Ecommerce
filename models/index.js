@@ -29,12 +29,12 @@ const seq = new Sequelize(
 const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = seq;
-db.category = require('./category.model.js');
+db.category = require('./category.model.js')(db.sequelize,Sequelize);
 
 /**
  * db object contains:
- * 
- * db={
+ *  
+ * db = {
  *  Sequelize;
  *  sequelize;
  *  category;

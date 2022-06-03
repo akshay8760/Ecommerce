@@ -1,3 +1,5 @@
+//UI -> routes -> controllers -> models
+
 const express = require('express');
 const serverConfig = require('./configs/server.config');
 const app = express();
